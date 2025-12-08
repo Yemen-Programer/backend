@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // عنوان الفرونت إند بالضبط
+  origin: 'https://saudiheritage.vercel.app/', // عنوان الفرونت إند بالضبط
   credentials: true, // السماح بإرسال الكوكيز
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
