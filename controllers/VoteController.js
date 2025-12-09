@@ -8,7 +8,7 @@ class VoteController {
       if (!userId || !contentId) {
         return res.status(400).json({ 
           success: false, 
-          message: "معرف المستخدم والمحتوى مطلوبان" 
+          message: "يجب تسجيل الدخول"
         });
       }      
       console.log(userId )
