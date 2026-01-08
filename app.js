@@ -26,11 +26,11 @@ app.use(express.urlencoded({ limit: "100mb", extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 // Routes
-app.use("/api/content", contentRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/posts', postRoutes);
-app.use('/api/notifications', notificationRoutes);
-app.use('/api/auth', authRoutes);
+app.use("/content", contentRoutes);
+app.use('/users', userRoutes);
+app.use('/posts', postRoutes);
+app.use('/notifications', notificationRoutes);
+app.use('/auth', authRoutes);
 app.use('/votes', voteRoutes);
 app.use('/wishlist', WishlistRoutes);
 app.use('/search', Search);
