@@ -31,9 +31,9 @@ app.use('/api/api/users', userRoutes);
 app.use('/api/api/posts', postRoutes);
 app.use('/api/api/notifications', notificationRoutes);
 app.use('/api/api/auth', authRoutes);
-app.use('/api/api/votes', voteRoutes);
-app.use('/api/api/wishlist', WishlistRoutes);
-app.use('/api/api/search', Search);
+app.use('/api/votes', voteRoutes);
+app.use('/api/wishlist', WishlistRoutes);
+app.use('/api/search', Search);
 // Route أساسي
 app.get("/", (req, res) => {
   res.json({ message: "Heritage Content Management API" });
