@@ -26,7 +26,7 @@ app.use(express.urlencoded({ limit: "100mb", extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 // Routes
-app.use("/api/content", contentRoutes);
+app.use("/api/api/content", contentRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/notifications', notificationRoutes);
